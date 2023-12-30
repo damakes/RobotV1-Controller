@@ -1,36 +1,41 @@
 ### Robotti Auto
+Robotti autoa ohjataan käyttäjän antamien komentojen avulla MODULAAR-sovelluksen kautta, joka on kehitetty Android-ympäristössä MIT App Inventorissa. Bluetooth-yhteys mahdollistaa kommunikoinnin robotin ja puhelimen välillä. HC-SR04 ultraäänianturi mittaa ympäristön etäisyyksiä, ja tulokset näkyvät käyttäjän laitteessa.
 
-Robotti auto liikkuu siten, että käyttäjän antamat käskyt välitetään matkapuhelimen "MODULAAR" sovelluksen kautta Bluetooth yhteydellä Arduino UNO -ohjainlevylle.
-liikkuu eteen, taakse, oikealle, vasemmalle, sekä HC-SR04 ultraäänianturi mittaa etäisyyttä ja näyttää tulokset käyttäjän laitteessa. 
+Käyttäjä voi määrittää HC-SR04 ultraäänisensorin suunnan (x, y) koordinaatistossa. Näitä suuntakomentoja voidaan käyttää ohjaamaan sensorin tarkkailusuuntaa.
 
+Pan-Tilt-Järjestelmä(servo * 2):
+---
+        'P' : pan-kulmaa + 5 astetta  (MAX 180 astetta).
+        'p' : pan-kulmaa - 5 astetta  (MIN 0 astetta).
+        'T' : tilt-kulmaa + 5 astetta (MAX 180 astetta).
+        't' : tilt-kulmaa - 5 astetta (MIN 0 astetta).
+---
 
-### MODULAAR app
-Kehitin Android-mobiilisovelluksen MIT App Inventorissa, joka toimii Bluetooth-yhteyden avulla. Sovelluksella lähetetään komentoja autolle ('B', 'F', 'L', 'R', 'S', 'P') ja vastaanotetaan tietoa HC-SR04 ultraäänisensorilta puhelimen näytölle.
+Robotti Auton Liike (DC motoottorit * 2):
+--
+        'F' : Eteenpäin.
+        'B' : Taaksepäin.
+        'R' : Kääntyy oikealle.
+        'L' : Kääntyy vasemmalle.
+	    'S' : Liike pysähtyy.
+--	
 
+HC-SR04 ultraäänisensorin mittaamat etäisyydet välitetään reaaliaikaisesti puhelimen näytölle, kuinka lähellä tai kaukana este on robotista.
 
-
-Modulaarinen Ohjainsovellus
-
-Kehitin Android-mobiilisovelluksen MIT App Inventorissa. Ohjainsovellus käyttää Bluetooth-yhteyttä, lähettää komentoja autolle ja näyttää HC-SR04 ultraäänisensorin tiedot puhelimen näytöllä.
-
-
-Bluetooth-moduuli on liitetty UNO:han, ja se kommunikoi matkapuhelimen kanssa Bluetooth-sovelluksen kautta.
-Matkapuhelimen Bluetooth-sovellus välittää tiedot 'B', 'F', 'L', 'R', 'S', 'P' Bluetooth-moduulille.
-Bluetooth-moduuli välittää tiedot UNO:lle, jotta UNO voi määrittää auton liikkeen saatujen tietojen perusteella.
-
-Robotti auto liikkuu eteen, taakse, oikealle ja vasemmalle, kun HC-SR04 ultraäänianturi mittaa etäisyyttä ja näyttää tulokset käyttäjän laitteessa. Kehitin Android-mobiilisovelluksen MIT App Inventorissa, joka toimii Bluetooth-yhteyden avulla. Sovelluksella lähetetään komentoja autolle ('B', 'F', 'L', 'R', 'S', 'P') ja vastaanotetaan tietoa HC-SR04 ultraäänisensorilta puhelimen näytölle.
 
 
 ##Komponentit
 ---
-    UNO R3 Controller: 1 kpl
-    L298P Shield: 1 kpl
-    V5 Sensor Shield: 1 kpl
-    HC-SR04 Ultrasonic Sensor: 1 kpl
-    Bluetooth Module (HC-06): 1 kpl
-    Servo Motor: 2 kpl
-    DC Motor: 2 kpl
+        UNO R3 Controller: 1 kpl
+        L298P Shield: 1 kpl
+        V5 Sensor Shield: 1 kpl
+        HC-SR04 Ultrasonic Sensor: 1 kpl
+        Bluetooth Module (HC-06): 1 kpl
+        Servo Motor: 2 kpl
+        DC Motor: 2 kpl
 ---
+
+
 ![ohjainapp](https://github.com/damakes/mini-auto/assets/155246347/6e5affbb-17b3-466c-b5bc-5f6a45ccc198)
 
 ![nälym](https://github.com/damakes/mini-auto/assets/155246347/fa6f8a26-cadf-40a6-88a9-c1b4a91540a9)
