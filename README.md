@@ -27,6 +27,7 @@ Keyestudion Ks0071 on Arduino-pohjainen mikrokontrollerin oppimissovellus, joka 
 <a title="Keyestudio Ks0071 &lt;https://www.keyestudio.com/&gt;, via wiki.keyestudio" href="https://www.keyestudio.com/"><img width="200" alt="Keyestudio Ks0071" src="https://wiki.keyestudio.com/images/3/3b/711.png?20160922021327"></a>
 
 Sarjaan kuuluu monia mielenkiintoisia ohjelmia, ja sitä voi laajentaa ulkoisilla piirimoduuleilla. Tämä auttaa oppimaan Arduinoa hauskalla tavalla ja kehittämään MCU-kehityskykyjä.
+
 ### Parametrit
 
 1. Moottorin parametrit: moottori: 6V, 150rpm/min 
@@ -112,6 +113,27 @@ Avaa Bluetooth APP ja pariliitä Bluetooth-laite. Kun se on pariliitetty, Blueto
 
 
 <a title="Schematic and Connection Diagram &lt;https://wiki.keyestudio.com/images/thumb/7/74/74.png/800px-74.png?20170213024659&gt;, via WikiKeystudio Ks0071" href="https://wiki.keyestudio.com/images/thumb/7/74/74.png/800px-74.png?20170213024659"><img width="2000" alt="Kaavio" src="https://wiki.keyestudio.com/images/thumb/7/74/74.png/800px-74.png?20170213024659"></a>
+
+
+
+
+
+
+
+### MODULAAR Ohain App
+Kehitin Android mobiilisovelluksen, sivulla MIT App Inventor. Ohjainsovellus toimii Bluetooth yhteyden avulla, sovelluksella lähetetään komentoja autolle: ’B’,F’,’L’,’R’,’S’,’P’  ja vastaanotetaan tietoa HC-SR04 ultraäänisensorilta puhelimen näytölle. 
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Näytekoodi via keyestudio
 
