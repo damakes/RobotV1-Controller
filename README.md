@@ -3,7 +3,7 @@ Robotti autoa ohjataan käyttäjän antamien komentojen avulla MODULAAR-sovelluk
 
 ![botti](https://github.com/damakes/mini-auto/assets/155246347/b6081ab0-3842-4863-ae00-a87a89d628dd)
 
-## Komponentit
+## Komponentit:
 -
         UNO R3 Controller: 1 kpl
         L298P Shield: 1 kpl
