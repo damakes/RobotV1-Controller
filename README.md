@@ -5,13 +5,13 @@ Robotti autoa ohjataan käyttäjän antamien komentojen avulla MODULAAR-sovelluk
 
 ## Komponentit:
 -
-        UNO R3 Controller: 1 kpl
-        L298P Shield: 1 kpl
-        V5 Sensor Shield: 1 kpl
-        HC-SR04 Ultrasonic Sensor: 1 kpl
-        Bluetooth Module (HC-06): 1 kpl
-        Servo Motor: 2 kpl
-        DC Motor: 2 kpl
+UNO R3 Controller: 1 kpl
+L298P Shield: 1 kpl
+V5 Sensor Shield: 1 kpl
+HC-SR04 Ultrasonic Sensor: 1 kpl
+Bluetooth Module (HC-06): 1 kpl
+Servo Motor: 2 kpl
+DC Motor: 2 kpl
 
 HC-SR04 ultraäänianturi mittaa ympäristön etäisyyksiä, ja tulokset näkyvät käyttäjän laitteessa.
 Käyttäjä voi määrittää HC-SR04 ultraäänisensorin suunnan (x, y) koordinaatistossa. Näitä suuntakomentoja voidaan käyttää ohjaamaan sensorin tarkkailusuuntaa.
