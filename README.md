@@ -1,35 +1,34 @@
-# Robotti Auto
-![botti](https://github.com/damakes/mini-auto/assets/155246347/b6081ab0-3842-4863-ae00-a87a89d628dd) 
+# RobotV1-Controller
 
-Robotti autoa ohjataan käyttäjän antamien komentojen avulla MODULAAR-sovelluksen kautta, joka on kehitetty <br>Android-ympäristössä [MIT App](https://appinventor.mit.edu/) Inventor:ssa. Bluetooth-yhteys mahdollistaa kommunikoinnin robotin ja puhelimen välillä. 
+Android application for Ks0071 keyestudio Mini Tank RobotV1, application developed using [MIT App](https://appinventor.mit.edu/). Communication via Bluetooth.
+
+<img src="https://github.com/damakes/mini-auto/assets/155246347/b6081ab0-3842-4863-ae00-a87a89d628dd" width="200" height="280">
+<img src="https://github.com/damakes/mini-auto/assets/155246347/6e5affbb-17b3-466c-b5bc-5f6a45ccc198" width="200" height="280">
+<img src="https://github.com/damakes/mini-auto/assets/155246347/2ffd9399-2c18-492c-8c5e-87fd176e2fb8" width="200" height="280">
+
+Control Commands:
+-
+	'F' : Move Forward.
+	'B' : Move Backward.
+	'R' : Turn Right.
+	'L' : Turn Left.
+	'S' : Stop Movement.
+	'P' : Increase pan angle by 5 degrees (MAX 180 degrees).
+	'p' : Decrease pan angle by 5 degrees (MIN 0 degrees).
+	'T' : Increase tilt angle by 5 degrees (MAX 180 degrees).
+	't' : Decrease tilt angle by 5 degrees (MIN 0 degrees).
+
+Components:
+-
+	UNO R3 Controller: 1 piece
+	L298P Shield: 1 piece
+	V5 Sensor Shield: 1 piece
+	HC-SR04 Ultrasonic Sensor: 1 piece
+	Bluetooth Module (HC-06): 1 piece
+	Servo Motor: 2 pieces
+	DC Motor: 2 pieces
  
-![ohjainapp](https://github.com/damakes/mini-auto/assets/155246347/6e5affbb-17b3-466c-b5bc-5f6a45ccc198) ![nälym222](https://github.com/damakes/mini-auto/assets/155246347/2ffd9399-2c18-492c-8c5e-87fd176e2fb8)
-
-HC-SR04 ultraäänisensorin mittaamat etäisyydet välitetään reaaliaikaisesti puhelimen näytölle, kuinka lähellä tai kaukana este on robotista.
-Käyttäjä voi määrittää HC-SR04 ultraäänisensorin suunnan (x, y) koordinaatistossa. Näitä suuntakomentoja voidaan käyttää ohjaamaan sensorin tarkkailusuuntaa.
-
-Auton Ohjaus
--
-	'F' : Eteenpäin.
-	'B' : Taaksepäin.
-	'R' : Kääntyy oikealle.
-	'L' : Kääntyy vasemmalle.
-	'S' : Liike pysähtyy.
-	'P' : pan-kulmaa + 5 astetta  (MAX 180 astetta).
-	'p' : pan-kulmaa - 5 astetta  (MIN 0 astetta).
-	'T' : tilt-kulmaa + 5 astetta (MAX 180 astetta).
-	't' : tilt-kulmaa - 5 astetta (MIN 0 astetta).
-
-Projektissa on käytetty seuraavia komponentteja:
--
-	UNO R3 Controller: 1 kpl
-	L298P Shield: 1 kpl
-	V5 Sensor Shield: 1 kpl
-	HC-SR04 Ultrasonic Sensor: 1 kpl
-	Bluetooth Module (HC-06): 1 kpl
-	Servo Motor: 2 kpl
-	DC Motor: 2 kpl
-<br>Komponentit valmistanut [Keyestudio](https://wiki.keyestudio.com/Main_Page).
-<br>Robotti Auton liike on toteutettu [Arduino IDE:llä](https://wiki-content.arduino.cc/en/software) / Tämä löytyy myös Microsoft storesta.
+<br> Ks0071 keyestudio Mini Tank, [Keyestudio](https://wiki.keyestudio.com/Main_Page).
+<br>Development Environment, [Arduino IDE](https://wiki-content.arduino.cc/en/software) /  Also available on Microsoft Store.
 
 
