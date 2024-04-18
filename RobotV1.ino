@@ -69,6 +69,18 @@ void back() {
   analogWrite(pinRF,255);
 }
 
+// Control Commands:
+// -
+// 	'F' : Move Forward.
+// 	'B' : Move Backward.
+// 	'R' : Turn Right.
+// 	'L' : Turn Left.
+// 	'S' : Stop Movement.
+// 	'P' : Increase pan angle by 5 degrees (MAX 180 degrees).
+// 	'p' : Decrease pan angle by 5 degrees (MIN 0 degrees).
+// 	'T' : Increase tilt angle by 5 degrees (MAX 180 degrees).
+// 	't' : Decrease tilt angle by 5 degrees (MIN 0 degrees).
+
 void loop() {
    // Clears the trigPin
   digitalWrite(trigPin, LOW);
