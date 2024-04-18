@@ -1,4 +1,4 @@
-# Mini Tank RobotV1 
+# Embedded Systems IoT Course project 2
 
 Second independent project, build for a embedded systems/Iot course at XAMK UAS. The embedded systems/Iot course was part of my second-year studies and was made in two weeks. The aim of the project was to create code and mobile app controller for Mini Tank RobotV1, utilizing the programming language C++. 
 
